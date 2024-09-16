@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  Recipe-App
+//
+//  Created by Lesley Lopez on 9/16/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+API_KEY = 662b01754f42478285d3cac3c58b729d
