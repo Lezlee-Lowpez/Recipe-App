@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var viewModel: RecipeViewModel
     @State var queryText = ""
-    var dataService = DataService()
+    
     
     var body: some View {
         VStack {
@@ -29,15 +30,12 @@ struct HomeView: View {
                 })
             }
             
-            
+            ListView()
             Spacer()
         }
         .padding()
         .onAppear{
-            Task{
-//                await dataService.getRecipes()
-            }
-           
+            viewModel.callForData()
         }
     }
 }

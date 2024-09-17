@@ -13,6 +13,8 @@
 		6F244D332C98B00D003D0B3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F244D322C98B00D003D0B3B /* Preview Assets.xcassets */; };
 		6F244D3C2C98CA9A003D0B3B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F244D3B2C98CA9A003D0B3B /* DataService.swift */; };
 		6F244D3E2C98D332003D0B3B /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F244D3D2C98D332003D0B3B /* RecipeModel.swift */; };
+		6F244D402C98DC96003D0B3B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F244D3F2C98DC96003D0B3B /* ListView.swift */; };
+		6F244D422C98F95C003D0B3B /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F244D412C98F95C003D0B3B /* RecipeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		6F244D3A2C98B33A003D0B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6F244D3B2C98CA9A003D0B3B /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		6F244D3D2C98D332003D0B3B /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		6F244D3F2C98DC96003D0B3B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		6F244D412C98F95C003D0B3B /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				6F244D3A2C98B33A003D0B3B /* Info.plist */,
 				6F244D2B2C98B006003D0B3B /* Recipe_AppApp.swift */,
 				6F244D2D2C98B006003D0B3B /* HomeView.swift */,
+				6F244D412C98F95C003D0B3B /* RecipeViewModel.swift */,
+				6F244D3F2C98DC96003D0B3B /* ListView.swift */,
 				6F244D3B2C98CA9A003D0B3B /* DataService.swift */,
 				6F244D3D2C98D332003D0B3B /* RecipeModel.swift */,
 				6F244D392C98B2EF003D0B3B /* Config.xcconfig */,
@@ -149,7 +155,9 @@
 			files = (
 				6F244D3C2C98CA9A003D0B3B /* DataService.swift in Sources */,
 				6F244D3E2C98D332003D0B3B /* RecipeModel.swift in Sources */,
+				6F244D402C98DC96003D0B3B /* ListView.swift in Sources */,
 				6F244D2E2C98B006003D0B3B /* HomeView.swift in Sources */,
+				6F244D422C98F95C003D0B3B /* RecipeViewModel.swift in Sources */,
 				6F244D2C2C98B006003D0B3B /* Recipe_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

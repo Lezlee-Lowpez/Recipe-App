@@ -8,6 +8,7 @@
 import Foundation
 
 struct RecipeModel : Codable {
+    
     // set up how the data should be parsed from the json
     
     var results: [Results]
@@ -18,7 +19,7 @@ struct RecipeModel : Codable {
     
 }
 
-struct Results : Codable {
+struct Results : Codable, Identifiable {
     var id: Int
     var title: String
     var image: String

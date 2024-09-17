@@ -9,13 +9,13 @@ import Foundation
 
 struct DataService {
     
-    func getRecipes() async {
+    func getRecipes() async -> [Results]{
         
         
         // first get the api key ready
         guard let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String else {
             print("invalid API KEY RETURNED.")
-            return
+            return []
         }
         
         
@@ -38,7 +38,7 @@ struct DataService {
                 let decoder = JSONDecoder()
                 
                 let results = try decoder.decode(RecipeModel.self, from: data)
-                print(results)
+                return results.results
                 
             } catch {
                 print(error)
@@ -46,6 +46,7 @@ struct DataService {
             
         }
         
+        return []
     }
     
    

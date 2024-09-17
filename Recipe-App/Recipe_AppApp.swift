@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct Recipe_AppApp: App {
+    
+    @StateObject var viewModel = RecipeViewModel()
+    
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environmentObject(viewModel)
         }
     }
 }
