@@ -18,7 +18,7 @@ struct ListView: View {
             ForEach(viewModel.recipe) { recipe in
                 
                 HStack {
-                    Image(systemName: "takeoutbag.and.cup.and.straw.fill")
+                    ImageView(url: recipe.image)
                     Text(recipe.title)
                 }
             }
