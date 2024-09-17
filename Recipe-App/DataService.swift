@@ -9,19 +9,19 @@ import Foundation
 
 struct DataService {
     
-    func getRecipes() async -> [Results]{
-        
+    func getRecipes(food:String) async -> [Results]{
+       
         
         // first get the api key ready
         guard let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String else {
             print("invalid API KEY RETURNED.")
             return []
         }
-        
+       
         
         //URL
         
-        if let url = URL(string: "https://api.spoonacular.com/recipes/complexSearch?query=pasta"){
+        if let url = URL(string: "https://api.spoonacular.com/recipes/complexSearch?query=\(food)"){
             
             //URL Request
             // if valid url is returned - create request for the api

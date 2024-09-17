@@ -13,29 +13,32 @@ struct HomeView: View {
     
     
     var body: some View {
-        VStack {
+        VStack (spacing:0){
             HStack{
                 TextField("Search a recipe", text: $queryText)
-                    .frame(height: 50)
-                    .border(Color.black)
-                Button(action: {}, label: {
+                    
+                    .textFieldStyle(.roundedBorder)
+                    .frame(height: 70)
+                    
+                
+                Button(action: {
+                    //when we press go it should search for the query
+                    viewModel.callForData(food:queryText)
+                }, label: {
                     Text("Go")
                         .foregroundStyle(.white)
-                        .frame(width: 50,height: 50)
+                        .frame(width: 50,height: 40)
                         .background(.blue)
                         .clipShape(RoundedRectangle(cornerRadius: 15.0))
-                        
-//                        .clipShape(RoundedRectangle(cornerRadius: 5))
-                        
                 })
             }
+            .padding(.horizontal)
             
             ListView()
             Spacer()
         }
-        .padding()
         .onAppear{
-            viewModel.callForData()
+            viewModel.callForData(food:"pasta")
         }
     }
 }

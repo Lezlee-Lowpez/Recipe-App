@@ -16,10 +16,10 @@ class RecipeViewModel: ObservableObject {
     
    
     
-    func callForData() {
+    func callForData(food:String) {
         //call for data in the model
         Task{
-                let fetchedrecipes = await dataService.getRecipes()
+                let fetchedrecipes = await dataService.getRecipes(food: food)
             
             DispatchQueue.main.async {
                 self.recipe = fetchedrecipes
